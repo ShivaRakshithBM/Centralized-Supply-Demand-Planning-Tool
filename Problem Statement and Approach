@@ -12,38 +12,43 @@ Questions:
 
 Approach:
 
+I have used a 9 step iterative framework for this dashboard creation.
+
+Business understanding:
+Poultry is a business which needs proper planning since it takes sufficient amount of time to grow the chickens. The chickens are made to grow in about 14 weeks in the required conditions. So the planning for the demand fulfillment has to be done 14 weeks in advance. This is done with the collaboration of the customers through a face to face meeting with them.
+
 Data understanding:
 The data was raw and had to be processed with business rules. There are multiple conditions that should be considered for the allocation of raw materials to each customer demand. 
 
 The demand is at a Week, Month, Year, Customer, SKU, Breed of chicked, Chicken part, Quantity
 The customer had flexible specifications like tolerance limits for the bird weights, interchangeable breeds of chickens, restrictions of chickens from certain manufacturing sites
 
-Customer Approvals is at the level of:
+Customer Approvals 
 Customer, Site Name
 
-Products File is at the level of:
+Products File:
 SKU, Min weight, Max weight, # of birds required, Chicken Breed, Can be sliced?
 
-WT priority file is at the level of:
+WT priority file
 Chicken Breed, Customer, Priority
 
-Site file is at the level of:
+Site data was at
 Site, Manufacturing process, Max Limit
 
-Supply file is at the level of:
+Supply data was at
 Site, Chicken breed, Weight, Quantity
 
-Demand data is at the level of:
+Demand data was at
 Customer, SKU, Chicken part, Chicken Breed, Quantity
-
+	
 Data preparation
+Data was present in separate files
 Blank / Null Value treatment – All the records with Blank / Null Values were communicated to the client for their correction
-Data Transformation: 
-1) Some of the data fields were string format and had to be split to numeric
-2) Data was transferred from Excel to R platform and converted into schema required for the future algorithm
-3) All the birds could not be used for all the demand since some chickens were damaged. So had to seperate into seperate files
+Data was transferred from Excel to R platform and converted into schema required for the future algorithm
+Some of the data fields were string format and had to be split to numeric
+All the birds could not be used for all the demand since some chickens were damaged
 
-Algorithm preparation:
+Algorithm / Logic preparation:
 All the logics like interchangeable Welfare types and interchangeable weights of birds were coded in the algorithm. There is a sequence in which the demand of the birds has to be fulfilled. The data was captured after each step since the client wanted to know the outcome of each step of the manufacturing process
 Code to consider allowable weight limits was added which was done on an adhoc basis before
 
@@ -53,17 +58,21 @@ Business understanding was a tough one since
 
 Dashboard Creation:
 
-1) The dashboard had multiple views each for a single stage of manufacturing
-2) The data was created in R which was later transferred to Excel 
-3) The visualizations were created in Excel accessing data through VBA codes
-4) The final view gave the demand and supply mismatch for each customer
+1)	The dashboard had multiple views each for a single stage of manufacturing
+2)	The data was created in R which was later transferred to Excel 
+3)	The visualizations were created in Excel accessing data through VBA codes
+4)	The final view gave the demand and supply mismatch for each customer
 
 Quality Check:
 The numbers in the dashboard was Quality checked by the team and the client several times to avoid any errors.
 
 Deployment:
-1) The dashboard was rolled out to the client for its usage in their environment
-2) The client connected the dashboard to their main Microsoft access database for automation and its continuous usage
+1)	The dashboard was rolled out to the client for its usage in their environment
+2)	The client connected the dashboard to their main Microsoft access database for automation and its continuous usage
 
 Next Steps:
-1) Required changes to the dashboard, according to the feedback from the clients, should be done
+1)	Required changes to the dashboard, according to the feedback from the clients, should be done
+
+Learnings:
+1)	Learnt the syntax for coding in R
+2)	Learnt the algorithmic thinking for data science projects and implement in R
