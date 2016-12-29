@@ -18,30 +18,30 @@ The data was raw and had to be processed with business rules. There are multiple
 The demand is at a Week, Month, Year, Customer, SKU, Breed of chicked, Chicken part, Quantity
 The customer had flexible specifications like tolerance limits for the bird weights, interchangeable breeds of chickens, restrictions of chickens from certain manufacturing sites
 
-Customer Approvals 
+Customer Approvals is at the level of:
 Customer, Site Name
 
-Products File:
+Products File is at the level of:
 SKU, Min weight, Max weight, # of birds required, Chicken Breed, Can be sliced?
 
-WT priority file
+WT priority file is at the level of:
 Chicken Breed, Customer, Priority
 
-Site data was at
+Site file is at the level of:
 Site, Manufacturing process, Max Limit
 
-Supply data was at
+Supply file is at the level of:
 Site, Chicken breed, Weight, Quantity
 
-Demand data was at
+Demand data is at the level of:
 Customer, SKU, Chicken part, Chicken Breed, Quantity
 
 Data preparation
-Data was present in separate files
 Blank / Null Value treatment – All the records with Blank / Null Values were communicated to the client for their correction
-Data was transferred from Excel to R platform and converted into schema required for the future algorithm
-Some of the data fields were string format and had to be split to numeric
-All the birds could not be used for all the demand since some chickens were damaged
+Data Transformation: 
+1) Some of the data fields were string format and had to be split to numeric
+2) Data was transferred from Excel to R platform and converted into schema required for the future algorithm
+3) All the birds could not be used for all the demand since some chickens were damaged. So had to seperate into seperate files
 
 Algorithm preparation:
 All the logics like interchangeable Welfare types and interchangeable weights of birds were coded in the algorithm. There is a sequence in which the demand of the birds has to be fulfilled. The data was captured after each step since the client wanted to know the outcome of each step of the manufacturing process
