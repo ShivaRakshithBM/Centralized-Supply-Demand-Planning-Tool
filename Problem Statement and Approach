@@ -17,6 +17,11 @@ I have used a 9 step iterative framework for this dashboard creation:
 
 Business understanding:
 Poultry is a business which needs proper planning since it takes sufficient amount of time to grow the chickens. The chickens are made to grow in about 14 weeks in the required conditions. So the planning for the demand fulfillment has to be done 14 weeks in advance. This is done with the collaboration of the customers through a face to face meeting with them.
+There are 3 complications:
+1) Chicken breed priority
+2) Customer priority
+3) Chicken weight priority
+4) Profit making capacity
 
 Data understanding:
 The data was raw and had to be processed with business rules. There are multiple conditions that should be considered for the allocation of raw materials to each customer demand. 
