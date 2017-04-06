@@ -1,7 +1,8 @@
 Problem Statement:
 
 Initial State:
-The plethora of processes happening during the manufacturing of final poultry products is in silos and there was a big disconnect among them. The calculations in each step is manual, not automated, which takes repetitive redundant efforts
+The plethora of processes happening during the manufacturing of final poultry products is in silos and there was a big disconnect among them. The calculations in each step is manual, not automated, which takes repetitive redundant efforts.
+The supply > Demand. So there is a lot of wastage.
  
 Final Desired State:
 There is a centralized tool which showcases the end to end processes of the poultry manufacturing. It is automated and connected to the data source which can be refreshed with new data.
