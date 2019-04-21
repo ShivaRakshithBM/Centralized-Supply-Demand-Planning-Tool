@@ -1,11 +1,13 @@
 Problem Statement:
 
 Initial State:
-The plethora of processes happening during the manufacturing of final poultry products is in silos and there was a big disconnect among them. The calculations in each step is manual, not automated, which takes repetitive redundant efforts.
+The plethora of processes happening during the manufacturing of final poultry products is in silos and there was a big disconnect among 
+them. The calculations in each step is manual, not automated, which takes repetitive redundant efforts.
 The supply > Demand. So there is a lot of wastage.
  
 Final Desired State:
-There is a centralized tool which showcases the end to end processes of the poultry manufacturing. It is automated and connected to the data source which can be refreshed with new data.
+There is a centralized tool which showcases the end to end processes of the poultry manufacturing. It is automated and connected to the 
+data source which can be refreshed with new data.
 
 Questions:
 1) What are the KPIs to gauge the sub products performance?
@@ -13,10 +15,22 @@ Questions:
 
 Approach:
 
-I have used a 9 step iterative framework for this dashboard creation:
+I have used a 9 step iterative framework for this project:
+1) Business Understanding
+2) Data Understanding
+3) Data preparation
+4) Data issues and Sanity control
+5) Algorithm / Logic creation
+6) Dashboard Creation
+7) Quality control
+8) Deployment
+9) Next Steps
 
 Business understanding:
-Poultry is a business which needs proper planning since it takes sufficient amount of time to grow the chickens. The chickens are made to grow in about 14 weeks in the required conditions. So the planning for the demand fulfillment has to be done 14 weeks in advance. This is done with the collaboration of the customers through a face to face meeting with them.
+Poultry is a business which needs proper planning since it takes sufficient amount of time to grow the chickens. The chickens are made to 
+grow in about 14 weeks in the required conditions. So the planning for the demand fulfillment has to be done 14 weeks in advance. 
+This is done with the collaboration of the customers through a face to face meeting with them.
+
 There are 3 complications:
 1) Chicken breed priority
 2) Customer priority
@@ -24,11 +38,13 @@ There are 3 complications:
 4) Profit making capacity
 
 Data understanding:
-The data was raw and had to be processed with business rules. There are multiple conditions that should be considered for the allocation of raw materials to each customer demand. 
+The data was raw and had to be processed with business rules. There are multiple conditions that should be considered for the 
+allocation of raw materials to each customer demand. 
 
 Demand file:
 Week, Month, Year, Customer, SKU, Breed of chicked, Chicken part, Quantity
-The customer had flexible specifications like tolerance limits for the bird weights, interchangeable breeds of chickens, restrictions of chickens from certain manufacturing sites
+The customer had flexible specifications like tolerance limits for the bird weights, interchangeable breeds of chickens, restrictions of
+chickens from certain manufacturing sites
 
 Customer Approvals file
 Customer, Site Name
@@ -56,7 +72,9 @@ Some of the data fields were string format and had to be split to numeric
 All the birds could not be used for all the demand since some chickens were damaged
 
 Algorithm / Logic preparation:
-All the logics like interchangeable Welfare types and interchangeable weights of birds were coded in the algorithm. There is a sequence in which the demand of the birds has to be fulfilled. The data was captured after each step since the client wanted to know the outcome of each step of the manufacturing process
+All the logics like interchangeable Welfare types and interchangeable weights of birds were coded in the algorithm. There is a sequence 
+in which the demand of the birds has to be fulfilled. The data was captured after each step since the client wanted to know the outcome 
+of each step of the manufacturing process
 Code to consider allowable weight limits was added which was done on an adhoc basis before
 
 Data Issues:
