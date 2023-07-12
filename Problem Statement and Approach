@@ -79,7 +79,6 @@ Code to consider allowable weight limits was added which was done on an adhoc ba
 
 Data Issues:
 There were many data sources with Blank / Null Value, which needed clients’ interference on a continuous basis
-Business understanding was a tough one since
 
 Dashboard Creation:
 
@@ -96,7 +95,7 @@ Deployment:
 2) The client connected the dashboard to their main Microsoft access database for automation and its continuous usage
 
 Next Steps:
-1)	Required changes to the dashboard, according to the feedback from the clients, should be done
+1) Required changes to the dashboard, according to the feedback from the clients, should be done
 
 Learnings:
 1) Creation of datasets in R 
